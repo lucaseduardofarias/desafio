@@ -1,0 +1,230 @@
+.fundo {
+    position: relative;
+    background-color: #cdcdcd;
+    width: 600px;
+    height: 600px;
+    padding: 50px;
+}
+
+.roleta {
+    border: 10px solid #FFF;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    overflow: hidden;
+    display: inline-block;
+    animation: rotation 2s infinite linear;
+}
+
+.setaRoleta {
+    position: absolute;
+    left: 48.5%;
+    border-bottom: 0px solid transparent;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    border-top: 80px solid #ffffff;
+    width: 0;
+    height: 0;
+    z-index: 999;
+    animation: animacaoSeta .35s linear infinite;
+    border-radius: 5px;
+}
+
+.box1,
+.box2,
+.box3,
+.box4,
+.box5,
+.box6,
+.box7,
+.box8 {
+    position: absolute;
+    width: 0;
+    height: 0;
+}
+
+.box1 {
+    border-top: 150px solid transparent;
+    border-right: 150px solid transparent;
+    border-bottom: 150px solid #f6685e;
+    border-left: 150px solid #f6685e;
+}
+
+.box5 {
+    border-top: 150px solid #e91e63;
+    border-right: 150px solid #e91e63;
+    border-bottom: 150px solid transparent;
+    border-left: 150px solid transparent;
+}
+
+.box2 {
+    border-top: 150px solid #9c27b0;
+    border-right: 150px solid transparent;
+    border-bottom: 150px solid transparent;
+    border-left: 150px solid #9c27b0;
+    left: 50%;
+}
+
+.box6 {
+    border-top: 150px solid transparent;
+    border-right: 150px solid #673ab7;
+    border-bottom: 150px solid #673ab7;
+    border-left: 150px solid transparent;
+    left: 50%
+}
+
+.box4 {
+    border-top: 150px solid transparent;
+    border-right: 150px solid transparent;
+    border-bottom: 150px solid #2196f3;
+    border-left: 150px solid #2196f3;
+    top: 50%;
+    left: 50%;
+}
+
+.box8 {
+    border-top: 150px solid #34399d;
+    border-right: 150px solid #34399d;
+    border-bottom: 150px solid transparent;
+    border-left: 150px solid transparent;
+    top: 50%;
+    left: 50%;
+}
+
+.box3 {
+    border-top: 150px solid #009688;
+    border-right: 150px solid transparent;
+    border-bottom: 150px solid transparent;
+    border-left: 150px solid #009688;
+    top: 50%;
+}
+
+.box7 {
+    border-top: 150px solid transparent;
+    border-right: 150px solid #ffeb3b;
+    border-bottom: 150px solid #ffeb3b;
+    border-left: 150px solid transparent;
+    top: 50%;
+}
+
+@keyframes roleta {
+    0% {
+        transform: rotate(0deg)
+    }
+    100% {
+        transform: rotate(360deg)
+    }
+}
+
+.premio {
+    position: absolute;
+    z-index: 999;
+    font-size: 27px;
+    font-weight: bold;
+    color: white;
+}
+
+.premiacao1 {
+    top: 35%;
+    left: 8%;
+    transform: rotate(25deg);
+}
+
+.premiacao2 {
+    top: 20%;
+    left: 25%;
+    transform: rotate(64deg);
+}
+
+.premiacao3 {
+    top: 20%;
+    left: 49%;
+    transform: rotate(115deg);
+}
+
+.premiacao4 {
+    top: 36%;
+    right: 5%;
+    transform: rotate(159deg);
+}
+
+.premiacao5 {
+    top: 60%;
+    right: 10%;
+    transform: rotate(200deg);
+}
+
+.premiacao6 {
+    top: 75%;
+    right: 25%;
+    transform: rotate(250deg);
+}
+
+.premiacao7 {
+    top: 76%;
+    left: 22%;
+    transform: rotate(300deg);
+}
+
+.premiacao8 {
+    top: 60%;
+    left: 10%;
+    transform: rotate(333deg);
+}
+
+.btnRoleta {
+    width: 10em;
+    height: 10em;
+    line-height: 10em;
+    top: 50%;
+    left: 50%;
+    margin-left: -5em;
+    margin-top: -5em;
+    font-weight: 800;
+    z-index: 998;
+    position: absolute;
+    background: #FFF;
+    border: none;
+    border-radius: 100%;
+    color: #999;
+    outline: none;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    box-shadow: 0 0.4em 0 rgba(0, 0, 0, 0.25);
+    text-align: center;
+    -webkit-transition: -webkit-transform 0.15s;
+    transition: -webkit-transform 0.15s;
+    transition: transform 0.15s;
+    transition: transform 0.15s, -webkit-transform 0.15s;
+    -webkit-transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.swal2-title {
+    position: relative;
+    max-width: 100%;
+    margin: 0 0 .4em;
+    padding: 0;
+    color: #000000;
+    font-size: 45px!important;
+    font-weight: 600;
+    text-align: center;
+    text-transform: none;
+    word-wrap: break-word;
+}
+
+.play {
+    z-index: 999;
+}
+
+.stop {
+    /*    visibility: hidden;*/
+    animation-play-state: paused;
+}
+
+.btnIcon {
+    font-size: 70px;
+}

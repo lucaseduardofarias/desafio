@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Roleta de prêmios</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/sweetalert.js"></script>
+    <script src="js/script.js"></script>
+</head>
+
+<body>
+    <div class="fundo">
+        <div class="setaRoleta"></div>
+        <div class="roleta" id="roleta">
+            <div class="box1"></div>
+            <div class="box2"></div>
+            <div class="box3"></div>
+            <div class="box4"></div>
+            <div class="box5"></div>
+            <div class="box6"></div>
+            <div class="box7"></div>
+            <div class="box8"></div>
+            <div class="premio premiacao1" id="opt1">10% desconto</div>
+            <div class="premio premiacao2" id="opt0">3% desconto</div>
+            <div class="premio premiacao3" id="opt7">5% desconto</div>
+            <div class="premio premiacao4" id="opt6">Tente outra vez</div>
+            <div class="premio premiacao5" id="opt5">5% desconto</div>
+            <div class="premio premiacao6" id="opt4">3% desconto</div>
+            <div class="premio premiacao7" id="opt3">10% desconto</div>
+            <div class="premio premiacao8" id="opt2">Tente outra vez</div>
+            <div id="btnPlay" class="btnRoleta play" onclick="rodarRoleta()"><span class="btnIcon">►</span> </div>
+            <div id="btnStop" class="btnRoleta stop" onclick="pararRoleta()"><span class="btnIcon">❚❚</span></div>
+        </div>
+    </div>
+
+</body>
+
+</html>
